@@ -170,7 +170,7 @@ public class messaging {
 public String storedMessages(){
     
             try (FileWriter file = new FileWriter("message.json")){
-                file.write(message);
+                file.write(messages);
                 System.out.println("Message successfully stored to messages.json");
             }catch(IOException e){
                 return "Could not save to file: " + e.getMessage();
